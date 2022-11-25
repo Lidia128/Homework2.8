@@ -8,20 +8,20 @@ public class Passport {
     private final String surname;
     private final String name;
     private final String secondName;
-    private final LocalDate localDate;
+    private final String dataOfBirth;
 
-    public Passport(int number, String surname, String name, String secondName, LocalDate localDate) {
+    public Passport(int number, String surname, String name, String secondName, String dataOfBirth) {
         this.number = number;
         this.surname = surname;
         this.name = name;
         this.secondName = secondName;
-        this.localDate = localDate;
+        this.dataOfBirth = dataOfBirth;
     }
     public int getNumber() { return number; }
         public String getSurname() {return surname; }
         public String getName() {return name; }
         public String getLastName() {return secondName; }
-        public LocalDate getLocalDate() {return localDate; }
+        public String getDataOfBirth() {return dataOfBirth; }
 
     @Override
     public boolean equals(Object o) {
