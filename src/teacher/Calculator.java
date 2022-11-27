@@ -9,8 +9,8 @@ public class Calculator {
     public Calculator() {
         Random random = new Random();
         while (solutions.size() < 15) {
-            solutions.add(new Solution(random.nextInt(2, 10),
-                    random.nextInt(2, 10)));
+            solutions.add(new Solution(random.nextInt(2,10),
+                   random.nextInt(2,10)));
         }
     }
     @Override
@@ -20,4 +20,4 @@ public class Calculator {
                 '}';
     }
 }
-}
+

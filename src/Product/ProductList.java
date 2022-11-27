@@ -14,8 +14,7 @@ public class ProductList {
             this.products.add(product);
         }
     }
-
-    public void removeProduct(String name){
+       public void removeProduct(String name){
         Iterator <Product>productIterator = this.products.iterator();
         while (productIterator.hasNext()){
             if (productIterator.next().getName().equals(name)){
